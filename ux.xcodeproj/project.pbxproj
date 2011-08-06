@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F933491413ECBE9400B461F3 /* 59-info.png in Resources */ = {isa = PBXBuildFile; fileRef = F933491313ECBE9400B461F3 /* 59-info.png */; };
-		F933491613ECBF0900B461F3 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = F933491513ECBF0900B461F3 /* 09-chat-2.png */; };
-		F933491813ECC12D00B461F3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F933491713ECC12D00B461F3 /* logo.png */; };
 		F9CF6C5C13ECB9B100C71B63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CF6C5B13ECB9B100C71B63 /* UIKit.framework */; };
 		F9CF6C5E13ECB9B100C71B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CF6C5D13ECB9B100C71B63 /* Foundation.framework */; };
 		F9CF6C6013ECB9B100C71B63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CF6C5F13ECB9B100C71B63 /* CoreGraphics.framework */; };
@@ -17,16 +14,13 @@
 		F9CF6C6813ECB9B100C71B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C6713ECB9B100C71B63 /* main.m */; };
 		F9CF6C6C13ECB9B100C71B63 /* uxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C6B13ECB9B100C71B63 /* uxAppDelegate.m */; };
 		F9CF6C6F13ECB9B100C71B63 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CF6C6D13ECB9B100C71B63 /* MainWindow.xib */; };
-		F9CF6C7213ECB9B100C71B63 /* ShorturlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C7113ECB9B100C71B63 /* ShorturlViewController.m */; };
-		F9CF6C7513ECB9B100C71B63 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C7413ECB9B100C71B63 /* AboutViewController.m */; };
-		F9CF6C7813ECB9B100C71B63 /* ShorturlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CF6C7613ECB9B100C71B63 /* ShorturlView.xib */; };
-		F9CF6C7B13ECB9B100C71B63 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CF6C7913ECB9B100C71B63 /* AboutView.xib */; };
+		F9CF6C7213ECB9B100C71B63 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C7113ECB9B100C71B63 /* FirstViewController.m */; };
+		F9CF6C7513ECB9B100C71B63 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CF6C7413ECB9B100C71B63 /* SecondViewController.m */; };
+		F9CF6C7813ECB9B100C71B63 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CF6C7613ECB9B100C71B63 /* FirstView.xib */; };
+		F9CF6C7B13ECB9B100C71B63 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CF6C7913ECB9B100C71B63 /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F933491313ECBE9400B461F3 /* 59-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "59-info.png"; sourceTree = "<group>"; };
-		F933491513ECBF0900B461F3 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
-		F933491713ECC12D00B461F3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F9CF6C5713ECB9B100C71B63 /* ux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CF6C5B13ECB9B100C71B63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F9CF6C5D13ECB9B100C71B63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,12 +32,12 @@
 		F9CF6C6A13ECB9B100C71B63 /* uxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uxAppDelegate.h; sourceTree = "<group>"; };
 		F9CF6C6B13ECB9B100C71B63 /* uxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uxAppDelegate.m; sourceTree = "<group>"; };
 		F9CF6C6E13ECB9B100C71B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		F9CF6C7013ECB9B100C71B63 /* ShorturlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShorturlViewController.h; sourceTree = "<group>"; };
-		F9CF6C7113ECB9B100C71B63 /* ShorturlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShorturlViewController.m; sourceTree = "<group>"; };
-		F9CF6C7313ECB9B100C71B63 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		F9CF6C7413ECB9B100C71B63 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		F9CF6C7713ECB9B100C71B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShorturlView.xib; sourceTree = "<group>"; };
-		F9CF6C7A13ECB9B100C71B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AboutView.xib; sourceTree = "<group>"; };
+		F9CF6C7013ECB9B100C71B63 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F9CF6C7113ECB9B100C71B63 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F9CF6C7313ECB9B100C71B63 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F9CF6C7413ECB9B100C71B63 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F9CF6C7713ECB9B100C71B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		F9CF6C7A13ECB9B100C71B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F933491013ECBDC000B461F3 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F933491713ECC12D00B461F3 /* logo.png */,
-				F933491513ECBF0900B461F3 /* 09-chat-2.png */,
-				F933491313ECBE9400B461F3 /* 59-info.png */,
-			);
-			name = Resource;
-			sourceTree = "<group>";
-		};
 		F9CF6C4C13ECB9B000C71B63 = {
 			isa = PBXGroup;
 			children = (
@@ -100,16 +84,15 @@
 		F9CF6C6113ECB9B100C71B63 /* ux */ = {
 			isa = PBXGroup;
 			children = (
-				F933491013ECBDC000B461F3 /* Resource */,
 				F9CF6C6A13ECB9B100C71B63 /* uxAppDelegate.h */,
 				F9CF6C6B13ECB9B100C71B63 /* uxAppDelegate.m */,
 				F9CF6C6D13ECB9B100C71B63 /* MainWindow.xib */,
-				F9CF6C7013ECB9B100C71B63 /* ShorturlViewController.h */,
-				F9CF6C7113ECB9B100C71B63 /* ShorturlViewController.m */,
-				F9CF6C7313ECB9B100C71B63 /* AboutViewController.h */,
-				F9CF6C7413ECB9B100C71B63 /* AboutViewController.m */,
-				F9CF6C7613ECB9B100C71B63 /* ShorturlView.xib */,
-				F9CF6C7913ECB9B100C71B63 /* AboutView.xib */,
+				F9CF6C7013ECB9B100C71B63 /* FirstViewController.h */,
+				F9CF6C7113ECB9B100C71B63 /* FirstViewController.m */,
+				F9CF6C7313ECB9B100C71B63 /* SecondViewController.h */,
+				F9CF6C7413ECB9B100C71B63 /* SecondViewController.m */,
+				F9CF6C7613ECB9B100C71B63 /* FirstView.xib */,
+				F9CF6C7913ECB9B100C71B63 /* SecondView.xib */,
 				F9CF6C6213ECB9B100C71B63 /* Supporting Files */,
 			);
 			path = ux;
@@ -178,11 +161,8 @@
 			files = (
 				F9CF6C6613ECB9B100C71B63 /* InfoPlist.strings in Resources */,
 				F9CF6C6F13ECB9B100C71B63 /* MainWindow.xib in Resources */,
-				F9CF6C7813ECB9B100C71B63 /* ShorturlView.xib in Resources */,
-				F9CF6C7B13ECB9B100C71B63 /* AboutView.xib in Resources */,
-				F933491413ECBE9400B461F3 /* 59-info.png in Resources */,
-				F933491613ECBF0900B461F3 /* 09-chat-2.png in Resources */,
-				F933491813ECC12D00B461F3 /* logo.png in Resources */,
+				F9CF6C7813ECB9B100C71B63 /* FirstView.xib in Resources */,
+				F9CF6C7B13ECB9B100C71B63 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +175,8 @@
 			files = (
 				F9CF6C6813ECB9B100C71B63 /* main.m in Sources */,
 				F9CF6C6C13ECB9B100C71B63 /* uxAppDelegate.m in Sources */,
-				F9CF6C7213ECB9B100C71B63 /* ShorturlViewController.m in Sources */,
-				F9CF6C7513ECB9B100C71B63 /* AboutViewController.m in Sources */,
+				F9CF6C7213ECB9B100C71B63 /* FirstViewController.m in Sources */,
+				F9CF6C7513ECB9B100C71B63 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,20 +199,20 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		F9CF6C7613ECB9B100C71B63 /* ShorturlView.xib */ = {
+		F9CF6C7613ECB9B100C71B63 /* FirstView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F9CF6C7713ECB9B100C71B63 /* en */,
 			);
-			name = ShorturlView.xib;
+			name = FirstView.xib;
 			sourceTree = "<group>";
 		};
-		F9CF6C7913ECB9B100C71B63 /* AboutView.xib */ = {
+		F9CF6C7913ECB9B100C71B63 /* SecondView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F9CF6C7A13ECB9B100C71B63 /* en */,
 			);
-			name = AboutView.xib;
+			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,7 +302,6 @@
 				F9CF6C8013ECB9B100C71B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
