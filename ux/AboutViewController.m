@@ -1,14 +1,14 @@
 //
-//  SecondViewController.m
+//  AboutViewController.m
 //  ux
 //
-//  Created by 熊田 裕明 on 11/08/06.
+//  Created by hatch2 on 11/08/06.
 //  Copyright 2011年 hatch2. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "AboutViewController.h"
 
-@implementation SecondViewController
+@implementation AboutViewController
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
