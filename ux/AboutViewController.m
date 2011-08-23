@@ -3,7 +3,7 @@
 //  ux
 //
 //  Created by hatch2 on 11/08/06.
-//  Copyright 2011年 hatch2. All rights reserved.
+//  Copyright 2011 hatch2. All rights reserved.
 //
 
 #import "AboutViewController.h"
@@ -17,6 +17,10 @@
     [super viewDidLoad];
 }
 */
+
+- (IBAction)infoBTNA:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ux.nu/"]];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

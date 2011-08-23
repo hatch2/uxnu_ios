@@ -13,6 +13,23 @@
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    //NSLog(@"%@ [%@|%@|%@|%@]", url, url.scheme, url.host, url.path, url.query);
+    //NSLog(@"%@", url.host);
+    /*
+    NSString *string = @"「そんな正規表現で大丈夫か？」「大丈夫だ、問題ない」";
+    NSError *error   = nil;
+    NSRegularExpression *regexp =
+    [NSRegularExpression regularExpressionWithPattern:@"http://(.+)"
+                                              options:0
+                                                error:&error];
+    NSTextCheckingResult *match = [regexp firstMatchInString:string options:0 range:NSMakeRange(0, string.length)];
+    */
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
