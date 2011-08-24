@@ -13,6 +13,7 @@
 
 @synthesize window=_window;
 
+
 - (IBAction)shorturlBTNA:(id)sender {
     [longtext resignFirstResponder];
 }
@@ -31,6 +32,20 @@
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if(!url || !url.query) {
+        UIAlertView* alert = [[[UIAlertView alloc] init] autorelease];
+        alert.message = @"URLのフォーマットが正しくありませんでした。";
+        [alert addButtonWithTitle:@"ok"];
+        [alert show];
+        return NO;   
+    }else {
+        //NSLog(@"%@",[url unicodeAbsoluteString]);
+        return YES;
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
