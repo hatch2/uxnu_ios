@@ -2,7 +2,7 @@
 //  main.m
 //  ux
 //
-//  Created by hatch2 on 11/08/06.
+//  Created by tasuke on 11/08/24.
 //  Copyright 2011 hatch2. All rights reserved.
 //
 

@@ -2,16 +2,22 @@
 //  uxAppDelegate.h
 //  ux
 //
-//  Created by hatch2 on 11/08/06.
-//  Copyright 2011年 hatch2. All rights reserved.
+//  Created by tasuke on 11/08/24.
+//  Copyright 2011 hatch2. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface uxAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface uxAppDelegate : NSObject <UIApplicationDelegate> {
+    IBOutlet UITextField* longtext;
+    IBOutlet UIButton *shorturlBTN;
+    IBOutlet UIButton *infoBTN;
+}
+
+- (IBAction)shorturlBTNA:(id)sender;
+- (IBAction)longurlboxOUTA:(id)sender;
+- (IBAction)infoBTNA:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end

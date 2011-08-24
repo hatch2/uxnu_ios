@@ -2,39 +2,33 @@
 //  uxAppDelegate.m
 //  ux
 //
-//  Created by hatch2 on 11/08/06.
-//  Copyright 2011蟷ｴ hatch2. All rights reserved.
+//  Created by tasuke on 11/08/24.
+//  Copyright 2011 hatch2. All rights reserved.
 //
 
 #import "uxAppDelegate.h"
 
 @implementation uxAppDelegate
 
-@synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
 
+@synthesize window=_window;
 
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    //NSLog(@"%@ [%@|%@|%@|%@]", url, url.scheme, url.host, url.path, url.query);
-    //NSLog(@"%@", url.host);
-    /*
-    NSString *string = @"「そんな正規表現で大丈夫か？」「大丈夫だ、問題ない」";
-    NSError *error   = nil;
-    NSRegularExpression *regexp =
-    [NSRegularExpression regularExpressionWithPattern:@"http://(.+)"
-                                              options:0
-                                                error:&error];
-    NSTextCheckingResult *match = [regexp firstMatchInString:string options:0 range:NSMakeRange(0, string.length)];
-    */
-    return YES;
+- (IBAction)shorturlBTNA:(id)sender {
+    [longtext resignFirstResponder];
 }
+
+- (IBAction)longurlboxOUTA:(id)sender {
+    [longtext resignFirstResponder];
+}
+
+- (IBAction)infoBTNA:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://ux.nu/"]];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    // Add the tab bar controller's current view as a subview of the window
-    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -81,22 +75,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_tabBarController release];
     [super dealloc];
 }
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
 
 @end
