@@ -12,6 +12,12 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>logo.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon-Small.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>hatch2.gehirn.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -30,7 +36,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>CFBundleURLIconFile</key>
-			<string>logo</string>
+			<string>Icon@2x</string>
 			<key>CFBundleURLName</key>
 			<string>hatch2.gehirn.${PRODUCT_NAME:rfc1034identifier}</string>
 			<key>CFBundleURLSchemes</key>
@@ -45,6 +51,8 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>UISupportedInterfaceOrientations</key>
