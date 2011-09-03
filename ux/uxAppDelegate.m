@@ -15,10 +15,35 @@
 
 
 - (IBAction)shorturlBTNA:(id)sender {
-    [longtext resignFirstResponder];
+    if([longtext.text length] == 0) {
+        UIAlertView *alertview = [[UIAlertView alloc]
+                                  initWithTitle:@"ux.nu"
+                                  message:@"URLが入力されていません"
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil
+                                  ];
+        [alertview show];
+        [alertview release];
+        return;
+    }
+    //[longtext resignFirstResponder];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://ux.nu/api/short?url=%@&format=plain",longtext.text]]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *json_string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    
+    if([json_string length] == 0) {
+        UIAlertView *alertview = [[UIAlertView alloc]
+                                  initWithTitle:@"ux.nu"
+                                  message:@"URLのフォーマットが正しくありません"
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil
+                                  ];
+        [alertview show];
+        [alertview release];
+        return;
+    }
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [NSString stringWithFormat:@"twitter://post?message=%@",json_string]]];
 }
@@ -41,14 +66,14 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    if(!url || !url.query) {
+    if(!url && !url.host) {
         UIAlertView* alert = [[[UIAlertView alloc] init] autorelease];
-        alert.message = @"URLのフォーマットが正しくありませんでした。";
+        alert.message = @"URLのフォーマットが正しくありません";
         [alert addButtonWithTitle:@"ok"];
         [alert show];
         return NO;   
     }else {
-        //NSLog(@"%@",[url unicodeAbsoluteString]);
+        longtext.text = url.host;
         return YES;
     }
     
