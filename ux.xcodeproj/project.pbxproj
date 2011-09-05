@@ -38,6 +38,7 @@
 		F98047BF1404EE7A001D70F1 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 		F98047C01404EE7A001D70F1 /* 59-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "59-info.png"; sourceTree = "<group>"; };
 		F98047C11404EE7A001D70F1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F9BA4DC11412A9E700816021 /* ux.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ux.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		F98047A21404ED56001D70F1 /* ux */ = {
 			isa = PBXGroup;
 			children = (
+				F9BA4DC11412A9E700816021 /* ux.entitlements */,
 				F98047AB1404ED57001D70F1 /* uxAppDelegate.h */,
 				F98047AC1404ED57001D70F1 /* uxAppDelegate.m */,
 				F98047AE1404ED57001D70F1 /* MainWindow.xib */,
